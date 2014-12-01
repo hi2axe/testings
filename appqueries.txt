@@ -1,0 +1,8 @@
+To display the number of times a chanel has been viewed with the number of times it has been viewed:
+select chanelnm, count(*) from jsontest group by chanelnm order by count(*);
+
+SELECT MAX(counted) FROM (SELECT COUNT(*) AS counted FROM jsontest GROUP BY chanelnm) as counts;
+
+To display the most viewed channel:
+select count(tdiff) as time
+ 
