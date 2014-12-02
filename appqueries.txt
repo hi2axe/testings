@@ -6,3 +6,4 @@ SELECT MAX(counted) FROM (SELECT COUNT(*) AS counted FROM jsontest GROUP BY chan
 To display the most viewed channel:
 select count(tdiff) as time
  
+random text
